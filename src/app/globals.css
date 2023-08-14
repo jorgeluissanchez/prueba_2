@@ -2,26 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*
+.wmde-markdown {
+  width: 100%;
+  background-color: #ffffff !important;
+  border-radius: 0.25rem;
+  padding: 2rem !important;
+  box-shadow: 0 0 0 1px #d0d7de, 0 0 0 #d0d7de, 0 1px 1px #d0d7de;
+  
+  min-height: calc(100vh - 2rem) !important;
+  max-height: calc(100vh - 2rem) !important;
+  height: calc(100vh - 2rem) !important;
+  overflow-y: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.w-md-editor, .w-md-editor-show-edit, .w-md-editor-text, .w-md-editor-content, .w-md-editor-aree, .w-md-editor-input, textarea {
+  width: 100%;
+  border-radius: 0.25rem;
+  min-height: calc(100vh - 2rem) !important;
+  max-height: calc(100vh - 2rem) !important;
+  height: calc(100vh - 2rem) !important;
+  overflow-y: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.w-md-editor-text {
+  padding: 2rem !important;
+  box-shadow: 0 0 0 1px #d0d7de, 0 0 0 #d0d7de, 0 1px 1px #d0d7de;
+  min-height: calc(100vh - 2rem) !important;
+  max-height: calc(100vh - 2rem) !important;
+  height: calc(100vh - 2rem) !important;
+  overflow-y: auto;
+}
+
+.w-md-editor-bar {
+  display: none;
+}*/
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Estilo del fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Estilo del área desplazada (área donde se desplaza el contenido) */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2.5px;
 }
